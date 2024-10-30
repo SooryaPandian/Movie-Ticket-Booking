@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import SeatPlan from './components/SeatPlan';
 
 const SeatSelection = () => {
   const [seats, setSeats] = useState(Array(10).fill().map(() => Array(30).fill('free')));
@@ -53,7 +54,8 @@ export default function App() {
   return (
     <div className="App">
       <h1>Movie Seat Selection</h1>
-      <SeatSelection />
+      {/* <SeatSelection /> */}
+      <SeatPlan/>
     </div>
   );
 }
